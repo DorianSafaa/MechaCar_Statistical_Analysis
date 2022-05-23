@@ -1,5 +1,10 @@
+# Import the library
 library(dplyr)
+
+# Read the data
 MechaCar_mpg <- read.csv('MechaCar_mpg.csv',stringsAsFactors = F)
 head(MechaCar_mpg)
+
+# Fit the multiple linear regression model
 Model <- lm(mpg~., data=MechaCar_mpg)
 summary(Model)
