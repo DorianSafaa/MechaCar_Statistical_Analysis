@@ -4,6 +4,7 @@
 
 The mechanical dataset contains mpg test results for 50 prototype MechaCars. The MechaCar prototypes were produced using multiple design specifications to identify ideal vehicle performance. Multiple metrics, such as vehicle length, vehicle weight, spoiler angle, drivetrain, and ground clearance, were collected for each vehicle. Using a linear regression model, we tried to predict the mpg of MechaCar prototypes using several variables. 
 The model is: 
+
 Mpg  = 6.27*Vehicle length + (1.25*10^-3)*Vehicle Weight + (6.88*10^-2)*Spoiler Angle + (3.55)*Ground Clearance – (3.41)*AWD -1.04*10^2
 
 ![lmSummary](https://user-images.githubusercontent.com/66279829/169751177-19f627ff-6b4b-4137-a544-dc87d3902644.PNG)
@@ -55,7 +56,17 @@ To help MechaCar vehicles, we will design a statistical study to compare the per
 * H0 : The mean of the safety ratings of the MechaCar Vehicles and company X’s mean safety ratings are equal.
 * Ha : The mean of the safety ratings of the MechaCar Vehicles and company X’s mean safety ratings are different. 
 
-To test this hypothesis, we need to perform a two-sample t-test since we have two samples from two different populations. For this, we need to collect 1000 data points about safety ratings for vehicles from MechaCar and 1000 from its competitor. These data points have to meet the t test assumptions (numerical, follow normal distribution, random sampling and enough data). 
+To test this hypothesis, we need to perform a two-sample t-test since we have two samples from two different populations. For this, we need to collect 1000 data points about safety ratings for vehicles from MechaCar and 1000 from its competitor. These data points have to meet the t-test assumptions:
+
+-The input data is numerical and continuous.
+
+-Each sample data was selected randomly from the population data.
+
+-The input data is considered to be normally distributed.
+
+-Each sample size is reasonably large. 
+
+After conducting the t-test, we compare the p-value to the significance level alpha 0.05. If the p-value is belowthe significance level, we reject the null hypothesis. Else, we fail to reject the null hypothesis. Therefore, we would state that there is not enough evidence to reject the null hypothesis and we can confirm our two samples are not statistically different.
 
 
 
