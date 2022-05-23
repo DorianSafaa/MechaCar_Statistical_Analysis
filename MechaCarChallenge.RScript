@@ -1,0 +1,5 @@
+library(dplyr)
+MechaCar_mpg <- read.csv('MechaCar_mpg.csv',stringsAsFactors = F)
+head(MechaCar_mpg)
+Model <- lm(mpg~., data=MechaCar_mpg)
+summary(Model)
