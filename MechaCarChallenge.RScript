@@ -20,3 +20,16 @@ total_summary
 # Calculate lot summary of PSI variable by Manufacturing lots groups
 lot_summary <- Suspension_Coil %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI),Median=median(PSI), Variance=var(PSI), SD=sd(PSI)) #create summary table
 lot_summary
+
+# One sample t test to compare sample versus population means
+t.test(Suspension_Coil$PSI,mu=1500)
+
+# Create three subsets for each lot
+lot1 <- Suspension_Coil %>% filter(Manufacturing_Lot=='Lot1') #select only data points in lot1
+lot2 <- Suspension_Coil %>% filter(Manufacturing_Lot=='Lot2') #select only data points in lot2
+lot3 <- Suspension_Coil %>% filter(Manufacturing_Lot=='Lot3') #select only data points in lot3
+
+# One sample t test to compare sample data for each subset versus population mean
+t.test(lot1$PSI,mu=1500)
+t.test(lot2$PSI,mu=1500)
+t.test(lot3$PSI,mu=1500)
