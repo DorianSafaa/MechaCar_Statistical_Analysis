@@ -35,6 +35,8 @@ In this section, we perform t-tests to determine if all manufacturing lots and e
 * Ha : There is a statistical difference between the PSI across all manufacturing lots and its presumed population mean of 1,500 pounds per square inch.
 The output of the test is: 
 
+![SampleTtest](https://user-images.githubusercontent.com/66279829/169752242-9330d340-30f0-4bd0-8316-ae40b26d6b52.PNG)
+
 Assuming our significance level was the common 0.05 percent, our p-value is above our significance level (p-value=0.06). Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means are statistically similar.
 Now, we need to test for each lot.
 
@@ -58,13 +60,13 @@ To help MechaCar vehicles, we will design a statistical study to compare the per
 
 To test this hypothesis, we need to perform a two-sample t-test since we have two samples from two different populations. For this, we need to collect 1000 data points about safety ratings for vehicles from MechaCar and 1000 from its competitor. These data points have to meet the t-test assumptions:
 
--The input data is numerical and continuous.
+- The input data is numerical and continuous.
 
--Each sample data was selected randomly from the population data.
+- Each sample data was selected randomly from the population data.
 
--The input data is considered to be normally distributed.
+- The input data is considered to be normally distributed.
 
--Each sample size is reasonably large. 
+- Each sample size is reasonably large. 
 
 After conducting the t-test, we compare the p-value to the significance level alpha 0.05. If the p-value is belowthe significance level, we reject the null hypothesis. Else, we fail to reject the null hypothesis. Therefore, we would state that there is not enough evidence to reject the null hypothesis and we can confirm our two samples are not statistically different.
 
