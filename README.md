@@ -34,6 +34,11 @@ The p-value (1) is above our significance level. Therefore, we do not have suffi
 The p-value (0.6) is above our significance level. Therefore, we do not have sufficient evidence to reject the null hypothesis, and we would state that the two means of lot 2 and population are statistically similar.
 
 The p-value (0.04) is below our significance level. Therefore, we reject the null hypothesis, and we would state that the two means of lot 3 and the population are statistically different.
+## Study Design: MechaCar vs Competition
+To help MechaCar vehicles, we will design a statistical study to compare the performance of the MechaCar vehicles against the performance of vehicles from other manufacturers. Since MechaCar number 1 priority is the safety of its customers, we choose to compare the safety ratings of their cars to their competitor’s ratings. Our hypothesis would be:
+* H0 : The mean of the safety ratings of the MechaCar Vehicles and company X’s mean safety ratings are equal.
+* Ha : The mean of the safety ratings of the MechaCar Vehicles and company X’s mean safety ratings are different. 
+To test this hypothesis, we need to perform a two-sample t-test since we have two samples from two different populations. For this, we need to collect 1000 data points about safety ratings for vehicles from MechaCar and 1000 from its competitor. These data points have to meet the t test assumptions (numerical, follow normal distribution, random sampling and enough data). 
 
 
 
